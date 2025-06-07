@@ -1,6 +1,6 @@
 # jobcelis.github.io
 
-### Notice
+### Notice:
 
 **This repository is public for viewing purposes, and to maintain my website only.**
 
