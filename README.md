@@ -6,4 +6,4 @@
 
 **Please do not copy, reuse, modify, or redistribute any of the code or assets.**
 
-**Also, try making something orignal for once.**
+**Also, try making something original for once.**
