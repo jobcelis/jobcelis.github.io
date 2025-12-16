@@ -44,7 +44,7 @@ a:hover {
   justify-content: space-between;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 /* Navbar */
@@ -146,20 +146,34 @@ main {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    padding: 1rem;
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .nav-links, .social-links {
+  .logo {
+    order: 1;
+    margin-right: 0;
+  }
+
+  .nav-links {
+    order: 2;
     margin-left: 0;
-    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 1rem;
+  }
+
+  .social-links {
+    order: 3;
+    margin-left: auto;
     gap: 1rem;
   }
 
   main {
     padding: 1rem;
-    margin-top: 120px; /* extra space for taller header on mobile */
+    margin-top: 80px;
   }
 
   .intro h1 {
