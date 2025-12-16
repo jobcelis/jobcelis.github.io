@@ -65,9 +65,11 @@ a:hover {
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  justify-self: flex-start;
+  gap: 2.5rem;
   margin-left: auto;
+  padding-left: 10px 0;
+  height: 39px;
   align-items: center;
 }
 
