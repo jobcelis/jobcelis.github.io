@@ -1,4 +1,4 @@
-/* Reset */
+
 html, * {
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@ footer {
   text-align: center;
 }
 
-/* Links */
+/* Header Links */
 a {
   color: #f5f5f5;
   text-decoration: none;
@@ -61,16 +61,15 @@ a:hover {
 .logo {
   font-size: 1.5rem;
   font-weight: bolder;
-  margin-right: 1rem;
+  position: absolute;
+  left: 5%; 
 }
 
 .nav-links {
   display: flex;
-  justify-self: flex-start;
-  gap: 2.5rem;
-  margin-left: auto;
-  padding-left: 10px 0;
-  height: 39px;
+  justify-content: center; 
+  gap: 3rem;
+  padding-left: 425px; 
   align-items: center;
 }
 
@@ -150,6 +149,7 @@ main {
   cursor: pointer;
 }
 
+/* Burger Menu Icon UI*/
 .burger div {
   width: 25px;
   height: 3px;
@@ -180,7 +180,7 @@ main {
     position: absolute;
     right: 0px;
     height: 27vh;
-    top: 8vh;
+    top: 10vh;
     background-color: #1f1f1f;
     display: flex;
     flex-direction: column;
