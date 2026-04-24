@@ -242,10 +242,11 @@ main {
   align-items: center;
 }
 
+/* Social links popup for mobile*/
   .social-links {
     position: absolute;
     right: 5px;
-    height: 28vh;
+    height: 19vh;
     top: 11vh;
     background-color: #1f1f1f;
     display: flex;
