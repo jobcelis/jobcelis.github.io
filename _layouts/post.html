@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }} | Job Celis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1f1f1f">
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="icon" type="image/png" href="/images/Website_Favicon.jpg"/>
+    <script src="https://kit.fontawesome.com/7e13fffe62.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="/" class="logo">Job Celis</a>
+        <div class="nav-links">
+          <a href="/blog.html"><i class="fa-regular fa-newspaper fa-xl"></i></a>
+          <a href="/projects.html"><i class="fa-solid fa-code fa-xl"></i></a>
+        </div>
+        <div class="social-links">
+          <a href="https://x.com/realjobcelis" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://github.com/jobcelis" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+<main>
+  <article class="blog-post">
+    <h1 style="font-size: 2.2rem;">{{ page.title }}</h1>
+    <p style="font-size: 1.3rem; color: #B0B0B1;">{{ page.date | date: "%B %-d, %Y" }}</p>
+    {{ content }}
+  </article>
+</main>
+
+    <footer>
+      <p>Designed by Job Celis • Made in the USA</p>
+      <p>&copy; <script>document.write(new Date().getFullYear());</script></p>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+
+html, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #2e2e2e;
+  color: #f5f5f5;
+  line-height: 1.6;
+  overflow-y: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #1f1f1f;
+  padding: 0.9rem 2rem;
+  text-align: center;
+}
+
+/* Header Links */
+a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #949292;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1f1f1f;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  position: absolute;
+  left: 5%; 
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center; 
+  gap: 3rem;
+  padding-left: 435px; 
+  align-items: center;
+}
+
+.social-links {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 1.8rem;
+  position: absolute;
+  right: 5%; 
+}
+
+/* Main content */
+main {
+  margin: 80px auto 4rem;
+  max-width: 800px;
+  padding: 1.5rem;
+  min-height: calc(100vh - 80px);
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Blog posts */
+.blog-post p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.recent-posts h2 {
+  margin-bottom: 1.5rem;
+}
+
+.project {
+  background: #3a3a3a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  transition: background 0.3s ease;
+}
+
+.project:hover {
+  background: #4a4a4a;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.project-list li {
+  background: #3a3a3a;
+  margin-bottom: 3.5rem;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.project-list li:hover {
+  background: #4a4a4a;
+}
+
+.project-list a {
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+.post {
+  background: #3a3a3a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  transition: background 0.3s ease;
+}
+.post:hover {
+  background: #4a4a4a;
+}
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+.post-list li {
+  background: #3a3a3a;
+  margin-bottom: 3.5rem;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+.post-list li:hover {
+  background: #4a4a4a;
+}
+.post-list a {
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* Intro paragraphs — left aligned, spaced out */
+.intro p {
+  font-size: 1.05rem;
+  max-width: 640px;
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+/* Three independent columns using grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2.5px solid #3a3a3a;
+}
+
+/* Column title text */
+.info-heading {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #949292;
+}
+
+/* Column body text */
+.info-col p {
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+}
+
+/* Stack to one column on mobile */
+@media screen and (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  width: 25px;
+  flex-shrink: 0; 
+}
+
+/* Burger Menu Icon UI*/
+.burger div {
+  width: 100%;
+  height: 3px;
+  background-color: #f5f5f5;
+  margin: 5px 0;
+}
+
+.burger:hover div {
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 0 auto;
+  padding: 10px 0 10px 5rem; 
+  height: 39px;
+  align-items: center;
+}
+
+/* Social links popup for mobile*/
+  .social-links {
+    position: absolute;
+    right: 5px;
+    height: 19vh;
+    top: 11vh;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 13%;
+    padding: 10px;
+    transform: translateX(110%);
+    transition: transform 0.3s ease-in;
+  }
+  
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
