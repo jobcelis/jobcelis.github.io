@@ -261,6 +261,11 @@ main {
 
   .burger {
     display: block;
+    position: absolute; 
+    right: 20px;
+    top: 25px; 
+    z-index: 1001;
+    cursor: pointer;
   }
 }
 
