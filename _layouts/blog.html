@@ -13,18 +13,16 @@
     <header class="header">
       <nav class="navbar">
         <a href="/" class="logo">Job Celis</a>
-        <div class="nav-links">
-          <a href="/blog/"><i class="fa-regular fa-newspaper fa-xl"></i></a>
-          <a href="/projects/"><i class="fa-solid fa-code fa-xl"></i></a>
-        </div>
-        <div class="social-links">
-          <a href="https://x.com/realjobcelis" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://github.com/jobcelis" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+        
+        <button class="burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">
+          <span class="burger-lines"></span>
+        </button>
+
+        <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+          <a href="/blog/">Blog</a>
+          <a href="/projects/">Projects</a>
+          <a href="https://x.com/realjobcelis" target="_blank">X</a>
+          <a href="https://github.com/jobcelis" target="_blank">GitHub</a>
         </div>
       </nav>
     </header>
