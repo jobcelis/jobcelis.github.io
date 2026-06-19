@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	const mobileMenu = document.getElementById('mobile-menu');
 	if (!burger || !mobileMenu) return; // nothing to do if markup is missing
 
+	// Only treat the burger as active when the viewport matches the mobile layout.
+	const mobileQuery = window.matchMedia('(max-width: 768px)');
+	const isMobileView = function () {
+		return mobileQuery.matches;
+	};
+
 	// Ensure there's a single overlay element used to detect outside clicks.
 	// The overlay is invisible (CSS controls visibility) but receives clicks.
 	let menuOverlay = document.querySelector('.menu-overlay');
@@ -23,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// When the burger is clicked, toggle the open/closed state of the menu.
 	burger.addEventListener('click', function () {
+		if (!isMobileView()) return;
+
 		// Read current 'expanded' state from the button's ARIA attribute.
 		const expanded = burger.getAttribute('aria-expanded') === 'true';
 
@@ -38,6 +46,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		// Toggle the overlay so clicks outside will be captured when the menu is open.
 		menuOverlay.classList.toggle('active');
+	});
+
+	// If the viewport grows to desktop size while the menu is open, close it.
+	mobileQuery.addEventListener('change', function () {
+		if (isMobileView()) return;
+
+		mobileMenu.classList.remove('show');
+		burger.classList.remove('open');
+		burger.setAttribute('aria-expanded', 'false');
+		mobileMenu.setAttribute('aria-hidden', 'true');
+		menuOverlay.classList.remove('active');
 	});
 
 	// Clicking the overlay (anywhere outside the menu) should close the menu.
