@@ -1,0 +1,19 @@
+---
+layout: post
+title: "How Streaming Made Me Start Collecting Physical Media Again"
+date: 2026-06-25
+---
+
+If you're anything like me, you're probably getting tired of streaming services. There are endless subscriptions offering different content, prices increase every year, and movies or shows can disappear because of licensing agreements or cost cutting decisions. Streaming was supposed to replace cable, but it just turned into cable again. That's what led me to a simple solution that I think may work for a lot of people.
+
+Recently, I've started collecting physical copies of movies like Fight Club, Oppenheimer, and The Social Network. You might think, "Why not just stream or rent them?" The problem is that it's not always that simple. Many popular films and shows, like old ones that have a cult following, regularly bounce between streaming services. One day they're on Netflix, the next they're on Hulu, Tubi, or somewhere else. Sometimes they disappear from streaming altogether, leaving renting or buying them as the only option.
+Franchises owned by major studios, such as Disney, Pixar, Marvel, or Star Wars, are generally more likely to stay on Disney+ than movies licensed from other studios. Even then, streaming isn't guaranteed forever. Streaming services have removed original content from their service before as part of cost cutting efforts, proving that even a company's own platform isn't completely permanent.
+
+That's why I think buying DVDs makes sense for movies or TV shows you know you'll watch more than once, so owning a physical copy means you never have to wonder where it's available. For example, I remember when The Social Network and Fight Club were available through Hulu on Disney+, but eventually they disappeared. Fortunately, I already owned them on DVD. The same goes for Band of Brothers. I've had the box set for years, so I can watch it whenever I want without checking which service has it.
+That doesn't mean you should buy everything physically. If you mainly watch something like the Marvel Cinematic Universe, subscribing to Disney+ is the more practical option. Since Disney owns those films and shows, they're generally much more likely to remain there than licensed content. Physical media works best for movies and shows that don't have a permanent streaming home.
+
+You might be wondering, "Why not just buy movies digitally?" That's certainly an option, but digital purchases aren't quite the same as owning a physical copy. When you buy a movie through Amazon Prime Video or Apple TV, you're still relying on that company's servers and digital storefront. While it's uncommon, purchased content has occasionally become unavailable because of licensing changes or other issues. Physical media doesn't have that problem. It also doesn't depend on your internet connection, and you don't need to download large files that take up storage space.
+
+You may also be wondering, "Why DVDs instead of Blu-ray?” Personally, I prefer DVDs because they're inexpensive, players are widely available even some that connect to your computer, and I don't mind sacrificing the picture quality if it means I can build a larger collection. If I ever want the absolute best image quality, I'd probably just stream it, but we all know the downsides that can come with relying on it. If you’re still not convinced, I recommend watching this video.
+
+In the end, I don't think streaming and physical media have to compete with each other; they simply complement each other. Streaming is great for discovering new movies or watching franchises that have a permanent home on a single service. But if there's a movie or TV show you know you'll want to watch again and again, and it keeps bouncing between streaming platforms, buying a physical copy can save you money, frustration, and the hassle of searching for where it's available every time you want to watch it.
