@@ -6,7 +6,6 @@ date: 2026-04-10
 
 <img src="/images/youtube_blof_thumbnail.jpg" style="width: 100%; max-width: 800px; height: auto;">
 
-<p><em>Note: No artificial intelligence was used in the making of this blog post.</em></p>
 
 YouTube is probably the first and oldest social network I've ever used and still use to this day. To paint you a picture, I remember watching videos on an iPod Touch running iOS 6 that still had the old YouTube icon. Yeah, that long. But over the past couple of years (or maybe over a decade), the site isn't what it used to be anymore; it has changed so drastically that it has come to the point where it's almost unusable. With the rise of short-form content taking over and reducing attention spans, ads that used to only last 5 seconds (something I still remember) are now 45 seconds - 1 minute long, forcing users to upload their IDs. The list just goes on. In this blog post, I'd like to go over some of the major issue that's ruining YouTube, and how it will get much worse for users in the future. I wouldn't be writing this if things hadn't gotten this bad. Just a heads up, I won't include old YouTube trends like the PewDiePie vs T-Series war, or YouTube Rewind (aside from their 2018 video).
 
