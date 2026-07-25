@@ -143,26 +143,32 @@ a:hover {
 
 /* Create top and bottom lines using pseudo-elements */
 .burger-lines::before,
-.burger-lines::after { content: ""; position: absolute; left: 0; }
+.burger-lines::after { content: ""; position: absolute; left: 0; transition: transform 250ms ease, opacity 250ms ease; }
 .burger-lines::before { top: -7px; }   /* Top line (7px above center) */
 .burger-lines::after { top: 7px; }    /* Bottom line (7px below center) */
 
 
 
 /* Mobile/Dropdown menu — contains all navigation links (Blog, Projects, X, GitHub) */
-/* Hidden by default; .show class toggles display. Positioned below the burger button */
+/* Hidden by default; .show class toggles the visible state. Positioned below the burger button */
 .mobile-menu {
-  display: none;
+  display: flex;
   position: absolute;
   top: 100%;        /* Appears directly below the header */
   left: 0;
   width: 100%;
   background: #1f1f1f;
-  padding: 1rem ;
+  padding: 0 1rem 0 1rem;
   box-shadow: 0 6px 12px rgba(0,0,0,0.3);
   flex-direction: column;
   gap: 1rem;
   z-index: 999;     /* Below header (z-index: 1000) but above other content */
+  opacity: 0;
+  transform: translateY(-12px);
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: opacity 250ms ease, transform 250ms ease, max-height 250ms ease, padding 250ms ease;
 }
 
 /* Menu link styling — each link is a full-width clickable block */
@@ -181,7 +187,13 @@ a:hover {
 }
 
 /* Toggle class applied by app.js when burger is clicked */
-.mobile-menu.show { display: flex; }        /* Show menu by applying flex display */
+.mobile-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 240px;
+  pointer-events: auto;
+  padding: 1rem;
+}
 
 /* Overlay that appears behind the mobile menu to capture outside clicks */
 .menu-overlay {
