@@ -257,8 +257,9 @@ main {
 
 /* BLOG POST BODY TEXT */
 .blog-post p {
-  margin-bottom: 1em;
+  margin-bottom: 1.05rem;
   line-height: 1.6;
+  font-size: 1.10rem;
 }
 
 /* RECENT POSTS HEADING */
