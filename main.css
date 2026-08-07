@@ -63,7 +63,7 @@ a:hover {
    Change these values to move the page icons and social icons left/right or up/down. */
 :root {
   /* Move the page icons group (blog/projects) left or right */
-  --header-page-links-right: 48.5%;
+  --header-page-links-right: 46%;
 
   /* Move the social icons group (X/GitHub) left or right */
   --header-social-links-right: 5%;
