@@ -125,8 +125,17 @@ a:hover {
   padding: 0;
 }
 
-
 .burger:focus { outline: 2px solid #949292; outline-offset: 2px; }
+
+/* Burger hover: lines fade to the same muted gray as the links.
+   Wrapped in (hover: hover) so touch screens don't leave it stuck gray after a tap. */
+@media (hover: hover) {
+  .burger:hover .burger-lines,
+  .burger:hover .burger-lines::before,
+  .burger:hover .burger-lines::after {
+    background: #949292;
+  }
+}
 
 /* Burger-lines: creates the three horizontal lines of the hamburger icon */
 /* Uses ::before and ::after pseudo-elements for the top and bottom lines */
@@ -139,15 +148,19 @@ a:hover {
   border-radius: 2px;
   width: 22px;
   position: relative;
+  transition: background 0.2s ease; /* Smooth color fade on hover */
 }
 
 /* Create top and bottom lines using pseudo-elements */
 .burger-lines::before,
-.burger-lines::after { content: ""; position: absolute; left: 0; transition: transform 250ms ease, opacity 250ms ease; }
+.burger-lines::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: transform 250ms ease, opacity 250ms ease, background 0.2s ease;
+}
 .burger-lines::before { top: -7px; }   /* Top line (7px above center) */
 .burger-lines::after { top: 7px; }    /* Bottom line (7px below center) */
-
-
 
 /* Mobile/Dropdown menu — contains all navigation links (Blog, Projects, X, GitHub) */
 /* Hidden by default; .show class toggles the visible state. Positioned below the burger button */
@@ -172,25 +185,24 @@ a:hover {
 }
 
 /* Menu link styling — each link is a full-width clickable block */
-.mobile-menu a { 
-  display: block; 
-  padding: 0.6rem 0; 
-  color: #f5f5f5; 
+.mobile-menu a {
+  display: block;
+  padding: 0.6rem 0;
+  color: #f5f5f5;
   border-bottom: 1px solid #2e2e2e;  /* Divider line between links */
   transition: color 0.3s ease, background-color 0.3s ease;  /* Smooth hover animation */
 }
 
-/* Menu link hover state — text fades to muted gray with slight background tint */
-/* Padding-left nudge creates a subtle slide-right effect on hover */
+/* Menu link hover state — text fades to muted gray */
 .mobile-menu a:hover {
-  color: #949292;                           /* Text fades to muted gray */
+  color: #949292;
 }
 
 /* Toggle class applied by app.js when burger is clicked */
 .mobile-menu.show {
   opacity: 1;
   transform: translateY(0);
-  max-height: 240px;
+  max-height: 310px;
   pointer-events: auto;
   padding: 1rem;
 }
@@ -229,10 +241,6 @@ a:hover {
   position: absolute;
   left: 5%;
 }
-
-
-
-
 
 /* MAIN CONTENT */
 main {

@@ -1,54 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>{{ page.title }} | Job Celis</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1f1f1f">
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/png" href="/images/Website_Favicon.jpg"/>
-    <link href="/fontawesome/css/all.min.css" rel="stylesheet">
+    <title>{{ page.title }} | Job Celis</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" type="image/jpeg" href="/images/Website_Favicon.jpg">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
   </head>
-  
+
   <body>
     <header class="header">
       <nav class="navbar">
         <a href="/" class="logo">Job Celis</a>
-        
+
         <button class="burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">
           <span class="burger-lines"></span>
         </button>
 
         <div class="page-links">
-          <a href="/blog/"><i class="fa-regular fa-newspaper header-icon"></i></a>
-          <a href="/projects/"><i class="fa-solid fa-code header-icon"></i></a>
+          <a href="/blog/" aria-label="Blog"><i class="fa-regular fa-newspaper header-icon"></i></a>
+          <a href="/projects/" aria-label="Projects"><i class="fa-solid fa-code header-icon"></i></a>
         </div>
 
         <div class="social-links">
-          <a href="https://x.com/realjobcelis" target="_blank"><i class="fa-brands fa-x-twitter header-icon"></i></a>
-          <a href="https://github.com/jobcelis" target="_blank"><i class="fa-brands fa-github header-icon"></i></a>
+          <a href="https://x.com/realjobcelis" target="_blank" rel="noopener" aria-label="X">
+            <i class="fa-brands fa-x-twitter header-icon"></i>
+          </a>
+          <a href="https://github.com/jobcelis" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa-brands fa-github header-icon"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+            <i class="fa-brands fa-youtube header-icon"></i>
+          </a>
         </div>
 
         <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
           <a href="/blog/">Blog</a>
           <a href="/projects/">Projects</a>
-          <a href="https://x.com/realjobcelis" target="_blank">X</a>
-          <a href="https://github.com/jobcelis" target="_blank">GitHub</a>
+
+          <div class="mobile-social">
+            <a href="https://x.com/realjobcelis" target="_blank" rel="noopener" aria-label="X">
+              <i class="fa-brands fa-x-twitter header-icon"></i>
+            </a>
+            <a href="https://github.com/jobcelis" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github header-icon"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+              <i class="fa-brands fa-youtube header-icon"></i>
+            </a>
+          </div>
         </div>
       </nav>
     </header>
 
-<main>
-  <article class="blog-post">
-    <h1 style="font-size: 2.6rem;">{{ page.title }}</h1>
-    <p style="font-size: 1.3rem; color: #B0B0B1;">{{ page.date | date: "%B %-d, %Y" }}</p>
-    {{ content }}
-  </article>
-</main>
+    <main>
+      <article class="blog-post">
+        <h1 style="font-size: 2.6rem;">{{ page.title }}</h1>
+        <p style="font-size: 1.3rem; color: #B0B0B1;">{{ page.date | date: "%B %-d, %Y" }}</p>
+        {{ content }}
+      </article>
+    </main>
 
     <footer>
       <p>Designed by Job Celis • Made in the USA</p>
       <p>&copy; <script>document.write(new Date().getFullYear());</script></p>
     </footer>
+
     <script src="/app.js"></script>
   </body>
 </html>
