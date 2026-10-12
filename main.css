@@ -1,7 +1,6 @@
 /* RESET */
 
 /* Remove default browser spacing; use border-box so padding doesn't add to element width */
-
 html, * {
   margin: 0;
   padding: 0;
